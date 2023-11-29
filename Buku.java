@@ -1,6 +1,8 @@
 package projekpbo;
 
 class Buku {
+    private static List<Buku> daftarBuku = new ArrayList<>();
+
     private int noIsbn;
     private String judulBuku;
     private String pengarang;
@@ -11,6 +13,11 @@ class Buku {
         this.judulBuku = judulBuku;
         this.pengarang = pengarang;
         this.statusTersedia = statusTersedia;
+        daftarBuku.add(this); // Menambahkan buku ke daftar buku saat dibuat
+    }
+
+    public static List<Buku> getDaftarBuku() {
+        return daftarBuku;
     }
 
     public int getNoIsbn() {
@@ -63,4 +70,3 @@ class Buku {
         }
     }
 }
-
