@@ -13,8 +13,8 @@ public class PerpustakaanRWJ {
         Buku buku2 = new Buku(113355, "PI (Pemrograman Interpreter)", "Wayan Santie Arif", true);
         Buku buku3 = new Buku(224466, "Multimedia", "Rio Arisandi", true);
 
-        AnggotaPerpustakaan anggota = new AnggotaPerpustakaan("Wayan", 2257051031L, "Jl. ABC");
-        AnggotaPerpustakaan anggota1 = new AnggotaPerpustakaan("Jhon", 2217051087L, "Jl. ABC");
+        AnggotaPerpustakaan anggota = new AnggotaPerpustakaan("Wayan", 2257051031L, "Rajabasa");
+        AnggotaPerpustakaan anggota1 = new AnggotaPerpustakaan("Jhon", 2217051087L, "Palapa 10");
 
         Admin admin = new Admin();
 
