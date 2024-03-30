@@ -4,13 +4,21 @@ import java.util.List;
 
 class Admin {
     public void manajemenBuku(List<Buku> daftarBuku) {
-        System.out.println("Admin : Manajemen Buku.");
         if (daftarBuku.isEmpty()) {
-            System.out.println("Tidak ada buku tersedia.");
+            System.out.println("\nTidak ada buku tersedia.");
         } else {
-            System.out.println("Daftar Buku Tersedia:");
+            System.out.println("\nDaftar Buku Tersedia:");
             for (Buku buku : daftarBuku) {
                 if (buku.isStatusTersedia()) {
+                    System.out.println("No ISBN: " + buku.getNoIsbn() +
+                                       ", Judul: " + buku.getJudulBuku() +
+                                       ", Pengarang: " + buku.getPengarang());
+                }
+            }
+            
+            System.out.println("\nDaftar Buku Telah Dipinjam:");
+            for (Buku buku : daftarBuku) {
+                if (!buku.isStatusTersedia()) {
                     System.out.println("No ISBN: " + buku.getNoIsbn() +
                                        ", Judul: " + buku.getJudulBuku() +
                                        ", Pengarang: " + buku.getPengarang());

@@ -41,5 +41,4 @@ public class TransaksiPeminjaman extends Notifikasi {
         System.out.println("Notifikasi: Batas waktu peminjaman telah mencapai.");
     }
 
-
 }
